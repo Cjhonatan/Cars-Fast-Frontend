@@ -21,4 +21,8 @@ export class CarsService {
      //rxjs(maneja la reactividad(que cuando pase algo el mismo se actualice y se ejecute) )
     
   }
+
+  getCarById(id:string){
+    return this.http.get('http://localhost:9000/api/cars/'+id)
+  }
 }
